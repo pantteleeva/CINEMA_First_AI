@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="CINEMA — фильмы и сериалы онлайн">
+  <title>CINEMA — Главная</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="logo" href="index.html"><span class="logo-mark">C</span> CINEMA</a>
+    <button class="menu-toggle" aria-label="Открыть меню" aria-expanded="false">☰</button>
+    <nav class="main-nav">
+      <a class="active" href="index.html">Главная</a>
+      <a href="catalog.html">Фильмы</a>
+      <a href="catalog.html#series">Сериалы</a>
+      <a href="catalog.html#popular">Подборки</a>
+      <a href="#plans">Тарифы</a>
+    </nav>
+    <div class="header-actions">
+      <button class="icon-button" aria-label="Поиск" data-search-toggle>⌕</button>
+      <a class="avatar" href="#profile" aria-label="Профиль">А</a>
+      <a class="button button-small" href="#plans">Попробовать бесплатно</a>
+    </div>
+  </header>
+
+  <main class="page-shell">
+    <form class="search-panel" data-search-form>
+      <input type="search" placeholder="Название фильма или сериала..." aria-label="Поиск по каталогу">
+      <button class="button" type="submit">Найти</button>
+    </form>
+
+    <section class="hero">
+      <div class="hero-copy">
+        <span class="eyebrow">ФИЛЬМ НЕДЕЛИ</span>
+        <h1>Интерстеллар</h1>
+        <div class="meta"><span>2014</span><span>Фантастика</span><span>2 ч 49 мин</span><span class="rating">★ 8.6</span></div>
+        <p>Группа исследователей отправляется в космос, чтобы найти новый дом для человечества.</p>
+        <div class="actions">
+          <a class="button" href="film.html">▶ Смотреть</a>
+          <button class="button button-ghost" data-watchlist="Интерстеллар">＋ В список</button>
+        </div>
+        <div class="hero-dots"><span></span><span></span><span></span><span></span><span></span></div>
+      </div>
+      <div class="placeholder hero-art"><span>ЗАГЛУШКА ИЗОБРАЖЕНИЯ<br>ГЕРОЙ ФИЛЬМА</span></div>
+    </section>
+
+    <section class="content-section">
+      <div class="section-heading"><h2>Продолжить просмотр</h2><a href="catalog.html">Все фильмы →</a></div>
+      <div class="movie-row">
+        <article class="movie-card progress-card"><a href="film.html" class="placeholder poster poster-wide"><span>ЗАГЛУШКА<br>КАДРА</span></a><h3>Отпечаток звёзд</h3><p>Осталось 1 ч 12 мин</p><div class="progress"><span style="width:68%"></span></div></article>
+        <article class="movie-card progress-card"><a href="film.html" class="placeholder poster poster-wide"><span>ЗАГЛУШКА<br>КАДРА</span></a><h3>Последний сигнал</h3><p>Осталось 42 мин</p><div class="progress"><span style="width:43%"></span></div></article>
+        <article class="movie-card progress-card"><a href="film.html" class="placeholder poster poster-wide"><span>ЗАГЛУШКА<br>КАДРА</span></a><h3>Глубина</h3><p>Осталось 25 мин</p><div class="progress"><span style="width:82%"></span></div></article>
+        <article class="movie-card progress-card"><a href="film.html" class="placeholder poster poster-wide"><span>ЗАГЛУШКА<br>КАДРА</span></a><h3>За горизонтом</h3><p>Осталось 45 мин</p><div class="progress"><span style="width:31%"></span></div></article>
+      </div>
+    </section>
+
+    <section class="content-section" id="popular">
+      <div class="section-heading"><h2>Новинки недели</h2><a href="catalog.html">Весь каталог →</a></div>
+      <div class="movie-grid movie-grid-six">
+        <article class="movie-card"><a class="placeholder poster" href="film.html"><span>ЗАГЛУШКА<br>ПОСТЕРА</span></a><h3>Дюна: Часть 2</h3><p>2024 · Фантастика</p><span class="rating">★ 8.2</span></article>
+        <article class="movie-card"><a class="placeholder poster" href="film.html"><span>ЗАГЛУШКА<br>ПОСТЕРА</span></a><h3>Гарри Поттер</h3><p>2001 · Фэнтези</p><span class="rating">★ 7.9</span></article>
+        <article class="movie-card"><a class="placeholder poster" href="film.html"><span>ЗАГЛУШКА<br>ПОСТЕРА</span></a><h3>Последний шанс</h3><p>2025 · Драма</p><span class="rating">★ 8.1</span></article>
+        <article class="movie-card"><a class="placeholder poster" href="film.html"><span>ЗАГЛУШКА<br>ПОСТЕРА</span></a><h3>Фуриоса</h3><p>2024 · Боевик</p><span class="rating">★ 7.8</span></article>
+        <article class="movie-card"><a class="placeholder poster" href="film.html"><span>ЗАГЛУШКА<br>ПОСТЕРА</span></a><h3>Сигнал</h3><p>2025 · Триллер</p><span class="rating">★ 7.6</span></article>
+        <article class="movie-card"><a class="placeholder poster" href="film.html"><span>ЗАГЛУШКА<br>ПОСТЕРА</span></a><h3>Внутри</h3><p>2024 · Драма</p><span class="rating">★ 7.5</span></article>
+      </div>
+    </section>
+
+    <section class="content-section">
+      <div class="section-heading"><h2>Жанры</h2><a href="catalog.html">Все жанры →</a></div>
+      <div class="genre-list">
+        <a href="catalog.html" class="genre-chip">◉ Боевик</a><a href="catalog.html" class="genre-chip">☻ Комедия</a><a href="catalog.html" class="genre-chip">♧ Драма</a><a href="catalog.html" class="genre-chip">◈ Ужасы</a><a href="catalog.html" class="genre-chip">✧ Фантастика</a><a href="catalog.html" class="genre-chip">♙ Аниме</a><a href="catalog.html" class="genre-chip">✦ Детектив</a><a href="catalog.html" class="genre-chip">♧ Фэнтези</a>
+      </div>
+    </section>
+
+    <section class="plans content-section" id="plans">
+      <div><span class="eyebrow">ТВОЙ КИНОВЕЧЕР</span><h2>Выбирай, что смотреть</h2><p>Открой мир кино без ограничений — на любом устройстве.</p></div>
+      <div class="plan-card"><span>Базовый</span><strong>299 ₽<small>/мес.</small></strong><p>HD · 1 устройство</p><button class="button button-ghost">Выбрать</button></div>
+      <div class="plan-card featured-plan"><span>Премиум</span><strong>799 ₽<small>/мес.</small></strong><p>4K · 4 устройства</p><button class="button">Выбрать</button></div>
+    </section>
+  </main>
+
+  <footer class="site-footer"><a class="logo" href="index.html"><span class="logo-mark">C</span> CINEMA</a><p>© 2026 CINEMA. Все права защищены.</p><div><a href="#">О сервисе</a><a href="#">Поддержка</a><a href="#">Правила</a></div></footer>
+  <div class="toast" role="status" aria-live="polite"></div>
+</body>
+</html>

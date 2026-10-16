@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CINEMA — Каталог</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="logo" href="index.html"><span class="logo-mark">C</span> CINEMA</a>
+    <button class="menu-toggle" aria-label="Открыть меню" aria-expanded="false">☰</button>
+    <nav class="main-nav"><a href="index.html">Главная</a><a class="active" href="catalog.html">Фильмы</a><a href="#series">Сериалы</a><a href="#popular">Подборки</a><a href="index.html#plans">Тарифы</a></nav>
+    <div class="header-actions"><button class="icon-button" aria-label="Поиск" data-search-toggle>⌕</button><a class="avatar" href="#profile">А</a><a class="button button-small" href="index.html#plans">Попробовать бесплатно</a></div>
+  </header>
+  <main class="page-shell catalog-layout">
+    <aside class="filters">
+      <div class="section-heading"><h2>Фильтры</h2><button class="text-button" data-reset-filters>Сбросить</button></div>
+      <label>Жанр<select data-filter="genre"><option value="">Любой</option><option>Боевик</option><option>Драма</option><option>Фантастика</option><option>Комедия</option><option>Триллер</option><option>Фэнтези</option></select></label>
+      <label>Год выпуска<select data-filter="year"><option value="">Любой</option><option>2025</option><option>2024</option><option>2023</option><option>2022</option><option>2014</option></select></label>
+      <label>Рейтинг от <strong data-rating-label>6.0</strong><input type="range" min="6" max="9" step=".5" value="6" data-filter="rating"></label>
+      <label>Тип<select data-filter="type"><option value="">Все</option><option>Фильм</option><option>Сериал</option></select></label>
+      <button class="button filter-submit" data-apply-filters>Показать фильмы</button>
+    </aside>
+    <section class="catalog-main">
+      <div class="page-title"><div><span class="eyebrow">БОЛЬШАЯ КОЛЛЕКЦИЯ</span><h1>Каталог</h1><p>Находи любимые фильмы и открывай новые истории.</p></div><div class="sort-wrap"><label for="sort">Сортировка</label><select id="sort" data-sort><option value="popular">По популярности</option><option value="rating">По рейтингу</option><option value="new">Сначала новые</option><option value="az">По названию</option></select></div></div>
+      <form class="search-panel catalog-search" data-search-form><input type="search" placeholder="Название фильма или сериала..." aria-label="Поиск по каталогу"><button class="button" type="submit">Найти</button></form>
+      <div class="catalog-tags"><button class="tag active" data-quick-filter="">Все</button><button class="tag" data-quick-filter="Фантастика">Фантастика</button><button class="tag" data-quick-filter="Боевик">Боевики</button><button class="tag" data-quick-filter="Драма">Драмы</button><button class="tag" data-quick-filter="Комедия">Комедии</button></div>
+      <div class="movie-grid catalog-grid" id="catalog-grid">
+        <article class="movie-card" data-title="Интерстеллар" data-genre="Фантастика" data-year="2014" data-rating="8.6" data-type="Фильм" data-popularity="10"><a class="placeholder poster" href="film.html"><span>ЗАГЛУШКА<br>ПОСТЕРА</span></a><h3>Интерстеллар</h3><p>2014 · Фантастика</p><span class="rating">★ 8.6</span></article>
+        <article class="movie-card" data-title="Дюна: Часть 2" data-genre="Фантастика" data-year="2024" data-rating="8.2" data-type="Фильм" data-popularity="9"><a class="placeholder poster" href="film.html"><span>ЗАГЛУШКА<br>ПОСТЕРА</span></a><h3>Дюна: Часть 2</h3><p>2024 · Фантастика</p><span class="rating">★ 8.2</span></article>
+        <article class="movie-card" data-title="Гарри Поттер" data-genre="Фэнтези" data-year="2001" data-rating="7.9" data-type="Фильм" data-popularity="8"><a class="placeholder poster" href="film.html"><span>ЗАГЛУШКА<br>ПОСТЕРА</span></a><h3>Гарри Поттер</h3><p>2001 · Фэнтези</p><span class="rating">★ 7.9</span></article>
+        <article class="movie-card" data-title="Фуриоса" data-genre="Боевик" data-year="2024" data-rating="7.8" data-type="Фильм" data-popularity="7"><a class="placeholder poster" href="film.html"><span>ЗАГЛУШКА<br>ПОСТЕРА</span></a><h3>Фуриоса</h3><p>2024 · Боевик</p><span class="rating">★ 7.8</span></article>
+        <article class="movie-card" data-title="Сотня" data-genre="Драма" data-year="2014" data-rating="7.6" data-type="Сериал" data-popularity="6" id="series"><a class="placeholder poster" href="film.html"><span>ЗАГЛУШКА<br>ПОСТЕРА</span></a><h3>Сотня</h3><p>2014 · Драма · Сериал</p><span class="rating">★ 7.6</span></article>
+        <article class="movie-card" data-title="Последний шанс" data-genre="Триллер" data-year="2025" data-rating="8.1" data-type="Фильм" data-popularity="5"><a class="placeholder poster" href="film.html"><span>ЗАГЛУШКА<br>ПОСТЕРА</span></a><h3>Последний шанс</h3><p>2025 · Триллер</p><span class="rating">★ 8.1</span></article>
+        <article class="movie-card" data-title="Глубина" data-genre="Драма" data-year="2023" data-rating="7.4" data-type="Фильм" data-popularity="4"><a class="placeholder poster" href="film.html"><span>ЗАГЛУШКА<br>ПОСТЕРА</span></a><h3>Глубина</h3><p>2023 · Драма</p><span class="rating">★ 7.4</span></article>
+        <article class="movie-card" data-title="Ночной рейс" data-genre="Боевик" data-year="2022" data-rating="7.2" data-type="Фильм" data-popularity="3"><a class="placeholder poster" href="film.html"><span>ЗАГЛУШКА<br>ПОСТЕРА</span></a><h3>Ночной рейс</h3><p>2022 · Боевик</p><span class="rating">★ 7.2</span></article>
+        <article class="movie-card" data-title="Тихий берег" data-genre="Комедия" data-year="2025" data-rating="7.1" data-type="Фильм" data-popularity="2"><a class="placeholder poster" href="film.html"><span>ЗАГЛУШКА<br>ПОСТЕРА</span></a><h3>Тихий берег</h3><p>2025 · Комедия</p><span class="rating">★ 7.1</span></article>
+        <article class="movie-card" data-title="Внутри" data-genre="Триллер" data-year="2024" data-rating="7.5" data-type="Фильм" data-popularity="1"><a class="placeholder poster" href="film.html"><span>ЗАГЛУШКА<br>ПОСТЕРА</span></a><h3>Внутри</h3><p>2024 · Триллер</p><span class="rating">★ 7.5</span></article>
+      </div>
+      <p class="empty-message" hidden data-empty>По выбранным параметрам ничего не найдено. Измени фильтры.</p>
+      <div class="pagination"><button class="page-number active">1</button><button class="page-number" data-page-demo>2</button><button class="page-number" data-page-demo>3</button><span>…</span><button class="page-number" data-page-demo>8</button></div>
+    </section>
+  </main>
+  <footer class="site-footer"><a class="logo" href="index.html"><span class="logo-mark">C</span> CINEMA</a><p>© 2026 CINEMA. Все права защищены.</p><div><a href="#">О сервисе</a><a href="#">Поддержка</a><a href="#">Правила</a></div></footer>
+  <div class="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
